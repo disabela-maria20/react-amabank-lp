@@ -1,4 +1,5 @@
 // eslint-disable-next-line no-use-before-define
+import GenZ from '@/components/template/GenZ/GenZ'
 import Head from 'next/head'
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
         <link rel="shortcut icon" href="icon.ico" />
         <title> Amabank – Conheça o Amabank </title>
       </Head>
-      <div className='text-green-600'>Amabank</div>
+      <GenZ/>
     </>
   )
 }
