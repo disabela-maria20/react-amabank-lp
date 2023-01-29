@@ -8,7 +8,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { HiOutlineArrowNarrowDown } from 'react-icons/hi'
 import { CgArrowLongRight } from 'react-icons/cg'
-import { Animated } from "react-animated-css";
+import { Slide, Fade, Zoom } from "react-awesome-reveal";
 
 
 const Section = ({ }) => {
@@ -17,13 +17,13 @@ const Section = ({ }) => {
     <section className="section">
       <div className="xl:container m-auto px-8">
         <div className="lg:grid lg:grid-cols-2 lg:gap-14 text-blue-700">
-          <Animated animationIn="fadeInLeft" animationOut="fadeOutLeft" animationInDuration={800} animationOutDuration={800} isVisible={true}>
+          <Slide duration={1000} direction="left">
             <div id="form">
               <FormRegister />
             </div>
-          </Animated>
+          </Slide>
           <article className="xl:pt-24">
-            <Animated animationIn="fadeInRight" animationOut="fadeOutRight" animationInDuration={800} animationOutDuration={800} isVisible={false}>
+            <Slide duration={1000} direction="right">
               <div className="pt-16 pb-5 lg:pt-28">
                 <h2 className="title-paragraph font-semibold inline-block">
                   O <span className="italic">amabanker</span> usa,<br /> nós, preservamos!
@@ -59,18 +59,18 @@ const Section = ({ }) => {
                 </div>
                 <img src="/img/nos-pela-amazônia.png" alt="amazonia" width='' height="" />
               </div>
-            </Animated>
+            </Slide>
           </article>
           <article className="md:hidden">
-            <Animated animationIn="zoomIn" animationOut="zoomOut" animationInDuration={800} animationOutDuration={800} isVisible={true}>
+            <Zoom duration={1000} direction="down">
               <div className="relative flex justify-center">
                 <img src="/img/card.png" className="m-auto" width='' height="" />
               </div>
-            </Animated>
+            </Zoom>
           </article>
           <article >
             <div id="banco-digital">
-              <Animated animationIn="fadeInLeft" animationOut="fadeOutLeft" animationInDuration={800} animationOutDuration={800} isVisible={true}>
+              <Slide duration={1000} direction="left">
                 <div className="pt-5 pb-5 lg:pb-20">
                   <h2 className="title-paragraph font-semibold inline-block pb-5">
                     Igual <span className="font-normal">ao que você já conhece, mas ainda</span>  melhor!
@@ -88,28 +88,28 @@ const Section = ({ }) => {
                     <strong>E tudo isso graças à você,</strong> que nos escolheu como o seu Banco Digital, visando preservar a Amazônia constantemente e sem precisar descontar do próprio bolso!
                   </p>
                 </div>
-              </Animated>
+              </Slide>
             </div>
           </article>
           <article className="hidden lg:flex lg: justify-center flex-col xl:block">
-            <Animated animationIn="fadeInRight" animationOut="fadeOutRight" animationInDuration={800} animationOutDuration={800} isVisible={false}>
+            <Slide duration={1000} direction="right">
               <div className="lg:relative app">
                 <img src="/img/app.png" />
               </div>
-            </Animated>
+            </Slide>
           </article>
           <article className="col-span-2 h-auto">
             <div id="servicos">
-              <Animated animationIn="zoomIn" animationOut="zoomOut" animationInDuration={800} animationOutDuration={800} isVisible={true}>
+              <Zoom duration={1000} direction="down">
                 <h2 className="title-paragraph font-semibold inline-block pb-10">
                   O que você faz no app da Amabank?
                   <span className="title-line">&mdash;</span>
                 </h2>
-              </Animated>
+              </Zoom>
             </div>
           </article>
           <article className="block sm:hidden">
-            <Animated animationIn="fadeInRight" animationOut="fadeOutRight" animationInDuration={800} animationOutDuration={800} isVisible={false}>
+            <Slide duration={1000} direction="right">
               <div className="px-11">
                 <ul className="grid grid-cols-2 sm:grid-cols-4 gap-10 font-semibold list-app">
                   <li className="bg-lg">
@@ -162,10 +162,10 @@ const Section = ({ }) => {
                   </li>
                 </ul>
               </div>
-            </Animated>
+            </Slide>
           </article>
           <article className="hidden sm:block lg:col-span-2">
-            <Animated animationIn="fadeInLeft" animationOut="fadeOutLeft" animationInDuration={800} animationOutDuration={800} isVisible={true}>
+            <Slide duration={1000} direction="left">
               <div className="px-11 flex lg:pb-36" >
                 <div className="relative men hidden lg:block">
                   <img src="/img/persona-homem.png" />
@@ -231,30 +231,30 @@ const Section = ({ }) => {
                   </ul>
                 </div>
               </div>
-            </Animated>
+            </Slide>
           </article>
           <article className="block md:hidden">
-            <Animated animationIn="zoomInUp" animationOut="zoomOut" animationInDuration={800} animationOutDuration={800} isVisible={true}>
+            <Zoom duration={1000} direction="down">
               <div className="text-center bg-white-50 py-3 rounded-3xl mt-9 mb-20 block sm:hidden">
                 <h4 className="font-bold text-tiny">QUERO TODOS ESSES BENEFÍCIOS</h4>
                 <p className="font-medium text-xs">
                   e ainda ajudar a proteger a <span className="font-bold">Ama</span>zônia <br /> ativamente, <span className="font-bold">de graça!</span>
                 </p>
               </div>
-            </Animated>
+            </Zoom>
           </article>
         </div>
       </div>
       <article className="gerenation_planet relative block md:hidden mt-24">
-        <Animated animationIn="zoomIn" animationOut="zoomOut" animationInDuration={800} animationOutDuration={800} isVisible={true}>
+        <Zoom duration={1000} direction="down">
           <img src="/img/gerenation_planet.png" />
-        </Animated>
+        </Zoom>
       </article>
       <article className="bg-green-600 pb-24">
         <div className="xl:container m-auto px-8">
           <div className="lg:grid grid-670-auto pt-16">
             <div className="lg:pr-20">
-              <Animated animationIn="fadeInLeft" animationOut="fadeOutLeft" animationInDuration={800} animationOutDuration={800} isVisible={true}>
+              <Slide duration={1000} direction="left">
                 <div className="pt-16 pb-5">
                   <div id="selos">
                     <h2 className="text-lg sm:text-2xl lg:text-5xl font-semibold inline-block text-white-50  lg:pt-10 lg:pb-24">
@@ -285,9 +285,9 @@ const Section = ({ }) => {
                     QUERO SER UM AMABANKER E AJUDAR A AMAZÔNIA!
                   </Link>
                 </div>
-              </Animated>
+              </Slide>
             </div>
-            <Animated animationIn="fadeInRight" animationOut="fadeOutRight" animationInDuration={800} animationOutDuration={800} isVisible={false}>
+            <Slide duration={1000} direction="right">
               <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 pr-0 pl-10 sm:pt-10  max-w-xl m-auto sm:max-w-full gap-10 lg:gap-3 lg:bg-white-50 h-5/6 rounded-3xl lg:pb-14 lg:pt-14 lg:pl-14 lg:pr-10">
                 <div className="relative icon-card">
                   <h3 className="text-white-50  lg:text-blue-700 font-semibold text-sm lg:text-base sm:h-24 sm:flex sm:justify-center sm:flex-col">Novo <br /> Amabanker</h3>
@@ -306,15 +306,14 @@ const Section = ({ }) => {
                   <img src="/img/card_20_ton.png" />
                 </div>
               </div>
-            </Animated>
+            </Slide>
           </div>
           <div className="mt-14 block lg:hidden">
-            <Link href="#form" className="bg-Blue-700 block text-white-50  text-center py-2 font-bold text-sm rounded-2xl">
+            <Link href="#form" className="bg-glue-700 block text-white-50  text-center py-2 font-bold text-sm rounded-2xl">
               QUERO SER UM AMABANKER <br /> E AJUDAR A AMAZÔNIA!
             </Link>
           </div>
         </div>
-
       </article>
     </section>
   )
